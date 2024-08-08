@@ -1,11 +1,13 @@
 import { useState } from 'react'
-import reactLogo from '../assets/react.svg'
-import viteLogo from '/vite.svg'
 // import './App.css'
+
+// place resources inside shaziblues.io/public folder
+const viteLogo = `/vite.svg`;
+const reactLogo = `/react.svg`;
 
 function App() {
   const [count, setCount] = useState(0)
-
+  console.log('setCount!', window.location.origin);
   return (
     <>
       <div>
